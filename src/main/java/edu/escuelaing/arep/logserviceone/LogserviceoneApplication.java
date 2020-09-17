@@ -8,11 +8,20 @@ import java.util.Collections;
 @SpringBootApplication
 public class LogserviceoneApplication {
 
+    /**
+     * Servicio que permite almacenar y obtener mensajes.
+     * @param args n/a
+     */
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(LogserviceoneApplication.class);
         app.setDefaultProperties(Collections.singletonMap("server.port", getPort()));
         app.run(args);
     }
+
+    /**
+     * Optiene puerto del entorno.
+     * @return port del entorno
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
