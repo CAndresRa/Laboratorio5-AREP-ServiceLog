@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build:
+        context: .
+        dockerfile: Dockerfile
+  db:
+    image: mongo
+    container_name: database
+    ports:
+    - 27017:27017

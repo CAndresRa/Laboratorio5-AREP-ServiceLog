@@ -15,6 +15,7 @@ public class MessageController {
 
     @PostMapping("/add")
     public void saveMessage(@RequestBody Message message){
+        System.out.println("holaaa");
         int id = messageService.numberOfMessages() + 1;
         message.setId(id);
         messageService.saveMessage(message);
@@ -22,6 +23,7 @@ public class MessageController {
 
     @GetMapping("/get")
     public String getMessages() throws JsonProcessingException {
+        System.out.println("holaaa");
         return messageService.getMessages();
     }
 }
