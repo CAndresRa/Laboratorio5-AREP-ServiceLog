@@ -1,0 +1,6 @@
+edu.escuelaing.arep.logserviceone
+edu.escuelaing.arep.logserviceone.controller
+edu.escuelaing.arep.logserviceone.entity
+edu.escuelaing.arep.logserviceone.repository
+edu.escuelaing.arep.logserviceone.service
+edu.escuelaing.arep.logserviceone.service.impl
